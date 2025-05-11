@@ -863,7 +863,8 @@ class T5UID1:
                 or idle_time < 1.0
                 or self.gcode.get_mutex().test()):
             return True
-        return False
+        else:
+            return False
 
     def cmd_DGUS_ABORT_PAGE_SWITCH(self, gcmd):
         pass
